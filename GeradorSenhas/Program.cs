@@ -37,8 +37,8 @@ do
 do
 {
     Console.Clear();
-    Console.WriteLine($"\nQuantidade de caracteres: {quantidade}");
-    escrever.WriteLine($"\nQuantidade de caracteres: {quantidade}");
+    Console.WriteLine($"\nQuantidade de caracteres: {quantidade}\n\n");
+    escrever.WriteLine($"\nQuantidade de caracteres: {quantidade}\n\n");
     Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine("===============================================");
     escrever.WriteLine("===============================================");
@@ -59,7 +59,8 @@ do
         Console.WriteLine("\nIncluir números");
         escrever.WriteLine("\nIncluir números");
     }
-
+    Console.WriteLine("\nNão incluir números\n\n");
+    escrever.WriteLine("\nNão incluir números\n\n");
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("\nDeseja incluir letras (maiúsculas e minúsculas)?");
     escrever.WriteLine("\nDeseja incluir letras (maiúsculas e minúsculas)?");
@@ -71,7 +72,8 @@ do
         Console.WriteLine("\nIncluir letras (maiúsculas e minúsculas)");
         escrever.WriteLine("\nIncluir letras (maiúsculas e minúsculas)");
     }
-    
+    Console.WriteLine("\nNão incluir letras (maiúsculas e minúsculas)\n\n");
+    escrever.WriteLine("\nNão incluir letras (maiúsculas e minúsculas)\n\n");
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("\nDeseja incluir símbolos?");
     escrever.WriteLine("\nDeseja incluir símbolos?");
@@ -83,7 +85,8 @@ do
         Console.WriteLine("\nIncluir símbolos");
         escrever.WriteLine("\nIncluir símbolos");
     }
-
+    Console.WriteLine("\nNão incluir símbolos\n\n");
+    escrever.WriteLine("\nNão incluir símbolos\n\n");
     if (incluirNumeros || incluirLetras || incluirSimbolos)
     {
         opcaoValida = true;
@@ -124,8 +127,8 @@ Console.WriteLine("===============================================");
 escrever.WriteLine("===============================================");
 Console.ResetColor();
 Console.ForegroundColor = ConsoleColor.Magenta;
-Console.WriteLine("\nSua senha gerada é: ");
-escrever.WriteLine("\nSua senha gerada é: ");
+Console.WriteLine("\nSua senha gerada é: \n");
+escrever.WriteLine("\nSua senha gerada é: \n");
 Console.WriteLine($"         {senha}");
 escrever.WriteLine($"         {senha}");
 Console.ResetColor();
