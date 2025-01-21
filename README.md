@@ -1,23 +1,23 @@
-### *Atividade 02:*
+# *Atividade 02:*
 
-# a - Criar uma pasta chamada “padariaDelicioPao”;<br>
-# b - Criar o briefing;<br>
-# c - Criar um site utilizando os recursos HTML e CSS.<br>
+### a - Criar uma pasta chamada “padariaDelicioPao”;<br>
+### b - Criar o briefing;<br>
+### c - Criar um site utilizando os recursos HTML e CSS.<br>
 
-### BRIEFING PRELIMINAR
+# BRIEFING PRELIMINAR
 
-SEU LOGOTIPO: 
+## SEU LOGOTIPO: 
 
-PÚBLICO-ALVO:
+## PÚBLICO-ALVO:
 
-OBJETIVOS DO WEB SITE:
+## OBJETIVOS DO WEB SITE:
 
-"IMAGEM” A SER TRANSMITIDA:
+## "IMAGEM” A SER TRANSMITIDA:
 
-CONTEÚDO DINÂMICO? QUAL?:
+## CONTEÚDO DINÂMICO? QUAL?:
 
-CONCORRENTES (vantagens / desvantagens):
+## CONCORRENTES (vantagens / desvantagens):
 
-REFERÊNCIAS (web sites):
+## REFERÊNCIAS (web sites):
 
-OBSERVAÇÕES:
+## OBSERVAÇÕES:
