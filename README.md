@@ -42,9 +42,9 @@ Padaria Guerra <br><br>
 - Uso de marketing digital para atrair clientes.<br>
 - Produtos locais e sustentáveis.<br><br>
  _desvantagens_: <br>
-- Falta de reconhecimento e confiança inicial.
-- Dificuldade em competir com padarias consolidadas.
-- Custos iniciais elevados.
+- Falta de reconhecimento e confiança inicial.<br>
+- Dificuldade em competir com padarias consolidadas.<br>
+- Custos iniciais elevados.<br>
 - Desafios operacionais devido à falta de experiência.<br><br>
 
 ## REFERÊNCIAS (web sites):
