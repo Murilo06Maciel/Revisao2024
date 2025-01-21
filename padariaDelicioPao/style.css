@@ -1,11 +1,12 @@
 .navbar {
-    background-color: white !important;
-    font-size: 1rem;
+    background-color: rgb(255, 255, 255) !important;
+    font-size: 50px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    height: 150px;
 }
 
 .navbar .navbar-brand, .nav-link {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 .nav-link {
@@ -14,7 +15,7 @@
 }
 
 .navbar-brand, .nav-link:hover {
-    color: #00bfff !important;
+    color: #ffd000 !important;
 }
 .dropdown-menu {
     background-color: white;
