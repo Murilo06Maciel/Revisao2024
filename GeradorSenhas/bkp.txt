@@ -1,38 +1,4 @@
 
-===============================================
-   Gerador de Senha - Personalize a sua senha  
-===============================================
-
-Defina a quantidade de caracteres que irão conter na senha:
-
-Quantidade de caracteres: 12
-
-
-===============================================
-       Selecione os tipos de caracteres:      
-===============================================
-Deseja incluir números?
-S - Sim | N - Não
-
-Incluir números
-
-Deseja incluir letras (maiúsculas e minúsculas)?
-S - Sim | N - Não
-
-Não incluir letras (maiúsculas e minúsculas)
-
-
-
-Deseja incluir símbolos?
-S - Sim | N - Não
-
-Não incluir símbolos
-
-
-===============================================
-            Senha Gerada com Sucesso!       
-===============================================
-
 Sua senha gerada é: 
 
-         626703145750
+         RHz2fVK47Z

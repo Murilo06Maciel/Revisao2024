@@ -9,11 +9,8 @@ char[] SimbolosArray = { '.', ',', ';', ':', '!', '@', '#', '$', '%', '&', '*', 
 
 Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("\n===============================================");
-escrever.WriteLine("\n===============================================");
 Console.WriteLine("   Gerador de Senha - Personalize a sua senha  ");
-escrever.WriteLine("   Gerador de Senha - Personalize a sua senha  ");
 Console.WriteLine("===============================================");
-escrever.WriteLine("===============================================");
 Console.ResetColor();
 
 int quantidade;
@@ -24,7 +21,6 @@ do
 {
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("\nDefina a quantidade de caracteres que irão conter na senha:");
-    escrever.WriteLine("\nDefina a quantidade de caracteres que irão conter na senha:");
     Console.ResetColor();
     if (!int.TryParse(Console.ReadLine(), out quantidade) || quantidade <= 0)
     {
@@ -38,58 +34,42 @@ do
 {
     Console.Clear();
     Console.WriteLine($"\nQuantidade de caracteres: {quantidade}\n\n");
-    escrever.WriteLine($"\nQuantidade de caracteres: {quantidade}\n\n");
     Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine("===============================================");
-    escrever.WriteLine("===============================================");
     Console.WriteLine("       Selecione os tipos de caracteres:      ");
-    escrever.WriteLine("       Selecione os tipos de caracteres:      ");
     Console.WriteLine("===============================================");
-    escrever.WriteLine("===============================================");
     Console.ResetColor();
 
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("Deseja incluir números?");
-    escrever.WriteLine("Deseja incluir números?");
     Console.WriteLine("S - Sim | N - Não");
-    escrever.WriteLine("S - Sim | N - Não");
     if (Console.ReadLine().ToUpper() == "S")
     {
         incluirNumeros = true;
         Console.WriteLine("\nIncluir números");
-        escrever.WriteLine("\nIncluir números");
     }
     else{
-    Console.WriteLine("\nNão incluir números\n\n");
-    escrever.WriteLine("\nNão incluir números\n\n");}
+    Console.WriteLine("\nNão incluir números\n\n");}
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("\nDeseja incluir letras (maiúsculas e minúsculas)?");
-    escrever.WriteLine("\nDeseja incluir letras (maiúsculas e minúsculas)?");
     Console.WriteLine("S - Sim | N - Não");
-    escrever.WriteLine("S - Sim | N - Não");
     if (Console.ReadLine().ToUpper() == "S")
     {
         incluirLetras = true;
         Console.WriteLine("\nIncluir letras (maiúsculas e minúsculas)");
-        escrever.WriteLine("\nIncluir letras (maiúsculas e minúsculas)");
     }
     else{
-    Console.WriteLine("\nNão incluir letras (maiúsculas e minúsculas)\n\n");
-    escrever.WriteLine("\nNão incluir letras (maiúsculas e minúsculas)\n\n");}
+    Console.WriteLine("\nNão incluir letras (maiúsculas e minúsculas)\n\n");}
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("\nDeseja incluir símbolos?");
-    escrever.WriteLine("\nDeseja incluir símbolos?");
     Console.WriteLine("S - Sim | N - Não");
-    escrever.WriteLine("S - Sim | N - Não");
     if (Console.ReadLine().ToUpper() == "S")
     {
         incluirSimbolos = true;
         Console.WriteLine("\nIncluir símbolos");
-        escrever.WriteLine("\nIncluir símbolos");
     }
     else{
-    Console.WriteLine("\nNão incluir símbolos\n\n");
-    escrever.WriteLine("\nNão incluir símbolos\n\n");}
+    Console.WriteLine("\nNão incluir símbolos\n\n");}
     if (incluirNumeros || incluirLetras || incluirSimbolos)
     {
         opcaoValida = true;
@@ -98,7 +78,6 @@ do
     {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("\nVocê precisa selecionar pelo menos uma opção (números, letras ou símbolos).");
-        escrever.WriteLine("\nVocê precisa selecionar pelo menos uma opção (números, letras ou símbolos).");
         Console.ResetColor();
         incluirNumeros = false;
         incluirLetras = false;
@@ -123,11 +102,8 @@ for (int i = 0; i < quantidade; i++)
 Console.Clear();
 Console.ForegroundColor = ConsoleColor.Green;
 Console.WriteLine("===============================================");
-escrever.WriteLine("===============================================");
 Console.WriteLine("            Senha Gerada com Sucesso!       ");
-escrever.WriteLine("            Senha Gerada com Sucesso!       ");
 Console.WriteLine("===============================================");
-escrever.WriteLine("===============================================");
 Console.ResetColor();
 Console.ForegroundColor = ConsoleColor.Magenta;
 Console.WriteLine("\nSua senha gerada é: \n");
