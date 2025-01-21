@@ -59,8 +59,9 @@ do
         Console.WriteLine("\nIncluir números");
         escrever.WriteLine("\nIncluir números");
     }
+    else{
     Console.WriteLine("\nNão incluir números\n\n");
-    escrever.WriteLine("\nNão incluir números\n\n");
+    escrever.WriteLine("\nNão incluir números\n\n");}
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("\nDeseja incluir letras (maiúsculas e minúsculas)?");
     escrever.WriteLine("\nDeseja incluir letras (maiúsculas e minúsculas)?");
@@ -72,8 +73,9 @@ do
         Console.WriteLine("\nIncluir letras (maiúsculas e minúsculas)");
         escrever.WriteLine("\nIncluir letras (maiúsculas e minúsculas)");
     }
+    else{
     Console.WriteLine("\nNão incluir letras (maiúsculas e minúsculas)\n\n");
-    escrever.WriteLine("\nNão incluir letras (maiúsculas e minúsculas)\n\n");
+    escrever.WriteLine("\nNão incluir letras (maiúsculas e minúsculas)\n\n");}
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("\nDeseja incluir símbolos?");
     escrever.WriteLine("\nDeseja incluir símbolos?");
@@ -85,8 +87,9 @@ do
         Console.WriteLine("\nIncluir símbolos");
         escrever.WriteLine("\nIncluir símbolos");
     }
+    else{
     Console.WriteLine("\nNão incluir símbolos\n\n");
-    escrever.WriteLine("\nNão incluir símbolos\n\n");
+    escrever.WriteLine("\nNão incluir símbolos\n\n");}
     if (incluirNumeros || incluirLetras || incluirSimbolos)
     {
         opcaoValida = true;
