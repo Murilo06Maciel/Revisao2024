@@ -109,6 +109,12 @@ body{
 .card a.btn:hover {
     background-color: #0056b3;
 }
+.contato{
+    text-align: center;
+    background-color: #ebe2da;
+    align-items: center;
+    justify-content: center;
+}
 
 footer {
     bottom: 0px;
