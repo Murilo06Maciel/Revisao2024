@@ -115,6 +115,9 @@ body{
     align-items: center;
     justify-content: center;
 }
+.text-primary{
+    background-color: #ffffff;
+}
 
 footer {
     bottom: 0px;
