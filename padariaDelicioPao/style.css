@@ -65,6 +65,59 @@ body{
     width: 90%;
     margin-left: 90px;
 }
+.produtos {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 80px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebe2da !important;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    height: 150px;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; 
+}
+.card a.btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #3e5975;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.card a.btn:hover {
+    background-color: #0056b3;
+}
+.contato{
+    text-align: center;
+    background-color: #ebe2da;
+    align-items: center;
+    justify-content: center;
+}
+.text-primary{
+    background-color: #ffffff;
+}
 
 footer {
     bottom: 0px;
@@ -76,13 +129,10 @@ footer {
     font-size: 0.9em;
     text-align: center;
 }
-
-
 footer a {
     color: #00bfff;
     text-decoration: none;
 }
-
 footer a:hover {
     text-decoration: underline;
 }
