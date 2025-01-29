@@ -67,10 +67,8 @@
         <p id="produtoDescricao"></p>
         <h3>Valor</h3>
         <p class="text-primary" id="produtoPreco"></p> 
-        <h3>Ingredientes</h3>
-        <ul id="produtoIngredientes" class="list-group mb-3"></ul>
         <a id="botaoComprar" class="btn btn-success mt-3">Comprar</a>
-        <a href="Cardápio.html" class="btn btn-secondary mt-3">Voltar para Produtos</a>
+        <a href="index.html" class="btn btn-secondary mt-3">Voltar para a página inicial</a>
     </div>
 
     <script>
@@ -87,16 +85,6 @@
         document.getElementById('produtoPreco').textContent = `Preço: ${produtoPreco}`;
         document.getElementById('produtoImagem').src = produtoImagem;
         document.getElementById('botaoComprar').href = `comprar.html?produto=${produtoNome}&preco=${produtoPreco}`;
-
-        if (produtoIngredientes) {
-            const ingredientesLista = produtoIngredientes.split(',');
-            ingredientesLista.forEach(ingrediente => {
-                const li = document.createElement('li');
-                li.textContent = ingrediente.trim();
-                li.classList.add('list-group-item');
-                document.getElementById('produtoIngredientes').appendChild(li);
-            });
-        }
     </script>
 </div>
     <footer class="text-center mt-5">
