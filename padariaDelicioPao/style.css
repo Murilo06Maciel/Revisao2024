@@ -96,8 +96,8 @@ body{
     justify-content: space-between;
     flex-grow: 1; 
 }
-.card a.btn {
-    align-self: flex-end;
+.card a.btn-primary {
+    align-self: end;
     padding: 10px 20px;
     background-color: #3e5975;
     color: white;
@@ -117,6 +117,21 @@ body{
 }
 .text-primary{
     background-color: #ffffff;
+}
+.card a.btn-secondary {
+    align-self: end;
+    padding: 10px 20px;
+    background-color: #888888;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.card .btn-container {
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 10px;
 }
 
 footer {
