@@ -60,58 +60,43 @@
     <div class="boas_vindas">
         <br><br><h1>Carrinho</h1><br><br><br>
     </div>
+    <div class="container mt-5">
+        <h1 class="text-center" id="produtoNome"></h1> 
+        <img id="produtoImagem" class="img-fluid mx-auto d-block" alt=""> 
+        <h3>Descrição</h3>
+        <p id="produtoDescricao"></p>
+        <h3>Valor</h3>
+        <p class="text-primary" id="produtoPreco"></p> 
+        <h3>Ingredientes</h3>
+        <ul id="produtoIngredientes" class="list-group mb-3"></ul>
+        <a id="botaoComprar" class="btn btn-success mt-3">Comprar</a>
+        <a href="Cardápio.html" class="btn btn-secondary mt-3">Voltar para Produtos</a>
+    </div>
+
     <script>
-        function atualizarCarrinho() {
-            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-            const carrinhoContainer = document.getElementById('carrinho');
-            carrinhoContainer.innerHTML = '';
+        const params = new URLSearchParams(window.location.search);
+        const produtoNome = params.get('nome');
+        const produtoDescricao = params.get('descricao');
+        const produtoPreco = params.get('preco');
+        const produtoImagem = params.get('imagem');
+        const produtoIngredientes = params.get('ingredientes');
 
-            if (carrinho.length === 0) {
-                carrinhoContainer.innerHTML = '<p class="text-center">Seu carrinho está vazio.</p>';
-                document.getElementById('total').value = ''; // Limpa o total
-                return;
-            }
+        document.title = `Detalhes - ${produtoNome}`;
+        document.getElementById('produtoNome').textContent = produtoNome;
+        document.getElementById('produtoDescricao').textContent = produtoDescricao;
+        document.getElementById('produtoPreco').textContent = `Preço: ${produtoPreco}`;
+        document.getElementById('produtoImagem').src = produtoImagem;
+        document.getElementById('botaoComprar').href = `comprar.html?produto=${produtoNome}&preco=${produtoPreco}`;
 
-            let total = 0;
-            carrinho.forEach(item => {
-                const itemElement = document.createElement('div');
-                itemElement.classList.add('card', 'mb-2');
-                itemElement.innerHTML = `
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <span>${item.nome} (R$ ${item.preco.toFixed(2)} x ${item.quantidade})</span>
-                        <button class="btn btn-danger btn-sm remover-item" data-nome="${item.nome}">Remover</button>
-                    </div>
-                `;
-                carrinhoContainer.appendChild(itemElement);
-                total += item.preco * item.quantidade;
-            });
-
-            document.getElementById('total').value = `Total: R$ ${total.toFixed(2)}`;
-
-           
-            document.querySelectorAll('.remover-item').forEach(button => {
-                button.addEventListener('click', function() {
-                    const nome = this.getAttribute('data-nome');
-                    const index = carrinho.findIndex(item => item.nome === nome);
-                    if (index !== -1) {
-                        carrinho.splice(index, 1);
-                        localStorage.setItem('carrinho', JSON.stringify(carrinho));
-                        atualizarCarrinho();
-                    }
-                });
+        if (produtoIngredientes) {
+            const ingredientesLista = produtoIngredientes.split(',');
+            ingredientesLista.forEach(ingrediente => {
+                const li = document.createElement('li');
+                li.textContent = ingrediente.trim();
+                li.classList.add('list-group-item');
+                document.getElementById('produtoIngredientes').appendChild(li);
             });
         }
-
-        document.getElementById('finalizarCompraBtn').addEventListener('click', function() {
-            if (confirm('Você deseja finalizar a compra?')) {
-                alert('Compra finalizada com sucesso!');
-                localStorage.removeItem('carrinho');
-                atualizarCarrinho();
-                window.location.href = 'hamburgueria.html'; 
-            }
-        });
-
-        atualizarCarrinho();
     </script>
 </div>
     <footer class="text-center mt-5">
