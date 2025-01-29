@@ -99,7 +99,6 @@ body{
 .card a.btn-primary {
     align-self: end;
     padding: 10px 20px;
-    width: 250px;
     background-color: #3e5975;
     color: white;
     border: none;
@@ -122,13 +121,17 @@ body{
 .card a.btn-secondary {
     align-self: end;
     padding: 10px 20px;
-    width: 250px;
     background-color: #888888;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
+}
+.card .btn-container {
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 10px;
 }
 
 footer {
